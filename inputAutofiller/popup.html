@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Autofiller</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 10px;
+        background-color: #f3f4f6;
+        width: 250px;
+        height: 215px;
+      }
+      h1 {
+        font-size: 25px;
+        color: #000000;
+        text-align: center;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="button"] {
+        width: 200px;
+        padding: 8px;
+        margin: 5px 0;
+        border-radius: 25px;
+      }
+      input[type="button"] {
+        background-color: #000000;
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      input[type="button"]:hover {
+        background-color: #222831;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Otomatik Doldur</h1>
+    <div>
+      <input type="text" id="input-value" placeholder="Metin giriniz.." />
+      <input
+        type="number"
+        id="input-number-value"
+        placeholder="Sayi giriniz.."
+      />
+      <input type="button" id="fill-inputs" value="Doldur" />
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
